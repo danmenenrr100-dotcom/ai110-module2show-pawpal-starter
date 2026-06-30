@@ -126,3 +126,9 @@ PawPal+ includes scheduling logic that makes the system more useful than a basic
 | Recurring tasks | `Task.generate_next_occurrence()` and `Scheduler.mark_task_complete()` | Creates a new task when a daily or weekly recurring task is completed. |
 | Plan explanation | `Scheduler.explain_plan()` | Explains why the plan was selected. |
 
+## 🧪 Testing PawPal+
+
+1. The test command
+2. What your tests cover
+3. The successful pytest output
+4. Your confidence level
