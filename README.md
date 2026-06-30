@@ -132,3 +132,29 @@ PawPal+ includes scheduling logic that makes the system more useful than a basic
 2. What your tests cover
 3. The successful pytest output
 4. Your confidence level
+
+
+## 📸 Demo Walkthrough
+
+PawPal+ is a Streamlit pet care planning app that lets a user create a pet profile, add care tasks, generate a daily schedule, filter tasks, and review scheduling conflicts.
+
+Example workflow:
+
+1. The user enters owner information and preferences.
+2. The user adds a pet with name, species, and age.
+3. The user adds care tasks such as walking, feeding, medication, grooming, or enrichment.
+4. Each task includes a duration, priority, preferred time, and frequency.
+5. The user enters how many minutes are available for pet care that day.
+6. PawPal+ generates a daily schedule based on priority, preferred time, and available time.
+7. The app displays an explanation of why the plan was selected.
+8. The user can filter tasks by pet, task type, or completion status.
+9. The app warns the user if two tasks share the same preferred time.
+10. When a recurring task is completed, the system creates the next occurrence.
+
+Key scheduler behaviors shown in the UI:
+
+- Tasks are sorted by preferred time.
+- Higher-priority tasks are selected first when building the daily plan.
+- Tasks that do not fit within the available time are skipped.
+- Conflict warnings appear when two tasks have the same preferred time.
+- Daily and weekly recurring tasks generate a new task after completion.
